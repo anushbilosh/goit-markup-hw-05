@@ -512,3 +512,7 @@ img {
     max-width: 360px;  
     margin-bottom: 16px;
 }
+
+.modal-icon, .close-icon {
+    fill: #2e2f42;
+}
