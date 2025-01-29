@@ -475,12 +475,11 @@ img {
     position: fixed;
     top: 0;
     background-color: rgba(46, 47, 66, 0.4);
-
 }
 
 .modal {
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -491,14 +490,16 @@ img {
     padding: 72px 24px 24px 24px;
 }
 .modal-close {
-    /* position: fixed;
-    margin-top: 24px;
-    margin-right: 24px; */
-    
-    
+    background-color: #E7E9FC;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
 }
 .close-icon {
-
+    
 }
 
 .modal-title {
@@ -514,5 +515,51 @@ img {
 }
 
 .modal-icon, .close-icon {
-    fill: #2e2f42;
+    /* fill: #2e2f42; */
+}
+
+.modal-form {
+
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding-left: 38px;
+    padding-right: 8px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size:  12px;
+    line-height: 117% ;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+
+.btn-send {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    background-color: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 24px;
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-send:hover,
+.btn-send:focus {
+    background: #404bbf;
 }
