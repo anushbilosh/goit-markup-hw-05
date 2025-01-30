@@ -481,6 +481,14 @@ img {
     position: fixed;
     top: 0;
     background-color: rgba(46, 47, 66, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .modal {
@@ -606,12 +614,29 @@ img {
     border-color: #4D5AE5;
 }
 
+.modal-checkbox {
+
+}
 .modal-privacy {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+}
+.modal-privacy-check {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+.modal-checkbox:checked + .modal-privacy-check {
+    background-color: #4D5AE5;
 }
 
 .privacy-policy {
