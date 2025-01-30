@@ -390,7 +390,7 @@ img {
     top: 0; 
     padding: 40px 32px;
     background-color: #4d5ae5;
-    line-height: 150%;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     font-size: 16px;
@@ -440,7 +440,7 @@ img {
     max-width: 208px;
 }
 
-.bottom-soc-text {
+.bottom-soc-text, .subscribe-text {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -473,6 +473,28 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscribe {
+    margin-left: 80px;
+}
+.subscribe-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size:  12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+    outline: transparent;
+    background-color: transparent;
+}
+.subscribe-input::placeholder {
+    color: #fff;
+}
 /* ---------------------MODAL-------------------- */
 
 .backdrop {
@@ -564,17 +586,20 @@ img {
     padding-left: 38px;
     padding-right: 8px;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
     font-size:  12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
+    color: #2e2f42;
     outline: transparent;
 }
 
-.modal-input:focus {
+.modal-input:focus, .subscribe-input:focus {
     border-color: #4D5AE5;
 }
+.modal-input::placeholder, .modal-textarea::placeholder { 
+    color: rgba(46, 47, 66, 0.4);
+}
+
 
 .modal-input:focus + .modal-icon {
     fill:#4D5AE5;
@@ -605,7 +630,7 @@ img {
     font-size:  12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: rgba(46, 47, 66, 0.4);
+    color: #2e2f42;
     outline: transparent;
     resize: none;
 }
