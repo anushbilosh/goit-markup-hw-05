@@ -365,56 +365,56 @@
 					</button>
 					<p class="modal-title">Leave your contacts and we will call you back</p>
 					<form class="modal-form">
-						<lable class="modal-lable">
+						<div class="modal-field">
+							<label for="user-name" class="modal-lable">Name</label>
 							<div class="input-wrap">
 								<input 
 									class="modal-input" 
 									type="text"
 									name="user-name"
 									placeholder="Enter your name"
-									id=""
-									required>
+									id="user-name">
 									<svg class="modal-icon" width="12" height="12">
 										<use href="./images/icons.svg#icon-name"></use>
 									</svg>
 							</div>
-						</lable>
-						<lable class="modal-lable">
+						</div>
+						<div class="modal-field">
+							<label for="user-tel" class="modal-lable" >Phone</label>
 							<div class="input-wrap">
 								<input 
 									class="modal-input" 
 									type="tel"
 									name="user-tel"
 									placeholder="Enter your phone number"
-									id=""
-									required>
+									id="user-tel">
 									<svg class="modal-icon" width="13" height="13">
 										<use href="./images/icons.svg#icon-phone"></use>
 									</svg>
 							</div>
-						</lable>
-						<lable class="modal-lable">
-							<div class="input-wrap">
-								<input 
-									class="modal-input" 
-									type="email"
-									name="user-email"
-									placeholder="Enter your email address"
-									id=""
-									required>
-									<svg class="modal-icon" width="16" height="12">
-										<use href="./images/icons.svg#icon-mail"></use>
-									</svg>
-							</div>
-						</lable>
-						<lable class="modal-lable">
-							<input 
-								class="modal-input" 
-								type="text"
-								name="comments"
+						</div>
+						<div class="modal-field">
+							<label class="modal-lable" for="user-email">Email</label>
+									<div class="input-wrap">
+										<input 
+											class="modal-input" 
+											type="email"
+											name="user-email"
+											placeholder="Enter your email address"
+											id="user-email">
+											<svg class="modal-icon" width="15" height="12">
+												<use href="./images/icons.svg#icon-mail"></use>
+											</svg>
+									</div>
+						</div>
+						<div class="modal-field">
+							<label for="user-comment" class="modal-lable">Comment</label>
+							<textarea 
+								class="modal-textarea" 
+								name="user-comment"
 								placeholder="Text input"
-								id="">
-						</lable>
+								id="user-comment"></textarea>
+						</div>
 					</form>
 					<p class="modal-privacy">I accept the terms and conditions of the <a class="privacy-policy" href="">Privacy Policy</a></p>
 					<button class="btn-send" type="submit">Send</button>
